@@ -1,5 +1,7 @@
 package com.example.javatest.util;
 
+import java.util.Optional;
+
 public class StringUtil {
     public static String repeat(String str, Integer times) {
         if (times < 0) {
@@ -13,5 +15,9 @@ public class StringUtil {
         }
 
         return result;
+    }
+
+    public static boolean isEmpty(String str) {
+        return str == null || str.trim().isEmpty();
     }
 }
